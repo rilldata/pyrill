@@ -1,0 +1,134 @@
+{
+  "test_name": "query_builder_complex_filter",
+  "org": "demo",
+  "project": "rill-openrtb-prog-ads",
+  "query": {
+    "metrics_view": "bids_metrics",
+    "dimensions": [
+      {
+        "name": "advertiser_name",
+        "compute": null
+      },
+      {
+        "name": "device_type",
+        "compute": null
+      },
+      {
+        "name": "device_region",
+        "compute": null
+      }
+    ],
+    "measures": [
+      {
+        "name": "overall_spend",
+        "compute": null
+      },
+      {
+        "name": "total_bids",
+        "compute": null
+      },
+      {
+        "name": "impressions",
+        "compute": null
+      },
+      {
+        "name": "clicks",
+        "compute": null
+      },
+      {
+        "name": "ctr",
+        "compute": null
+      }
+    ],
+    "where": {
+      "name": null,
+      "val": null,
+      "cond": {
+        "op": "and",
+        "exprs": [
+          {
+            "name": null,
+            "val": null,
+            "cond": {
+              "op": "eq",
+              "exprs": [
+                {
+                  "name": "device_type",
+                  "val": null,
+                  "cond": null,
+                  "subquery": null
+                },
+                {
+                  "name": null,
+                  "val": "mobile",
+                  "cond": null,
+                  "subquery": null
+                }
+              ]
+            },
+            "subquery": null
+          },
+          {
+            "name": null,
+            "val": null,
+            "cond": {
+              "op": "in",
+              "exprs": [
+                {
+                  "name": "device_region",
+                  "val": null,
+                  "cond": null,
+                  "subquery": null
+                },
+                {
+                  "name": null,
+                  "val": [
+                    "US",
+                    "GB",
+                    "CA"
+                  ],
+                  "cond": null,
+                  "subquery": null
+                }
+              ]
+            },
+            "subquery": null
+          }
+        ]
+      },
+      "subquery": null
+    },
+    "having": null,
+    "time_range": {
+      "start": "2025-12-29T00:00:00+00:00",
+      "end": "2026-01-02T00:00:00+00:00",
+      "iso_duration": null,
+      "iso_offset": null,
+      "expression": null,
+      "round_to_grain": null
+    },
+    "comparison_time_range": null,
+    "spine": null,
+    "sort": [
+      {
+        "name": "overall_spend",
+        "desc": true
+      }
+    ],
+    "limit": 50,
+    "offset": null,
+    "pivot_on": null,
+    "time_zone": null,
+    "use_display_names": null,
+    "rows": null
+  },
+  "result": {
+    "data": []
+  },
+  "metadata": {
+    "description": "QueryBuilder: Mobile campaigns in US, GB, CA regions",
+    "filter": "device_type = 'mobile' AND device_region IN ('US', 'GB', 'CA')",
+    "time_range": "2025-12-29 to 2026-01-02",
+    "note": "Built using QueryBuilder fluent API with dict-based filters"
+  }
+}

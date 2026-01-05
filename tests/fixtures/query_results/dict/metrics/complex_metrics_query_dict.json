@@ -1,0 +1,419 @@
+{
+  "test_name": "complex_metrics_query_dict",
+  "org": "demo",
+  "project": "rill-openrtb-prog-ads",
+  "query": {
+    "metrics_view": "bids_metrics",
+    "dimensions": [
+      {
+        "name": "timestamp_day",
+        "compute": {
+          "time_floor": {
+            "dimension": "__time",
+            "grain": "day"
+          }
+        }
+      },
+      {
+        "name": "advertiser_name"
+      }
+    ],
+    "measures": [
+      {
+        "name": "overall_spend"
+      },
+      {
+        "name": "total_bids"
+      },
+      {
+        "name": "win_rate"
+      }
+    ],
+    "where": {
+      "cond": {
+        "op": "eq",
+        "exprs": [
+          {
+            "name": "device_type"
+          },
+          {
+            "val": "Mobile/Tablet"
+          }
+        ]
+      }
+    },
+    "time_range": {
+      "start": "2025-12-26T00:00:00+00:00",
+      "end": "2026-01-02T00:00:00+00:00"
+    },
+    "sort": [
+      {
+        "name": "timestamp_day",
+        "desc": false
+      },
+      {
+        "name": "overall_spend",
+        "desc": true
+      }
+    ],
+    "limit": 50
+  },
+  "result": {
+    "data": [
+      {
+        "advertiser_name": "Amgen Inc",
+        "overall_spend": 6630.868,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 1079,
+        "win_rate": 0.6088971269694161
+      },
+      {
+        "advertiser_name": "drakesoftware",
+        "overall_spend": 5644.38,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 1629,
+        "win_rate": 0.39594843462246776
+      },
+      {
+        "advertiser_name": "Johnson & Johnson",
+        "overall_spend": 5291.622,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 631,
+        "win_rate": 0.5990491283676703
+      },
+      {
+        "advertiser_name": "GlaxoSmithKline",
+        "overall_spend": 5221.63,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 634,
+        "win_rate": 0.5883280757097792
+      },
+      {
+        "advertiser_name": "Instacart",
+        "overall_spend": 3561.428,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 2320,
+        "win_rate": 0.22198275862068967
+      },
+      {
+        "advertiser_name": "Unreal Deli",
+        "overall_spend": 2891.008,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 1032,
+        "win_rate": 0.6298449612403101
+      },
+      {
+        "advertiser_name": "Toosla",
+        "overall_spend": 2316.9,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 327994,
+        "win_rate": 0.0035336012244126416
+      },
+      {
+        "advertiser_name": "Spero Foods",
+        "overall_spend": 2156.451,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 659,
+        "win_rate": 0.7435508345978755
+      },
+      {
+        "advertiser_name": "Epizyme",
+        "overall_spend": 1945.861,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 267,
+        "win_rate": 0.5205992509363296
+      },
+      {
+        "advertiser_name": "Izneo",
+        "overall_spend": 1749.875,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 212,
+        "win_rate": 0.589622641509434
+      },
+      {
+        "advertiser_name": "Hyundai",
+        "overall_spend": 1642.728,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 998,
+        "win_rate": 0.343687374749499
+      },
+      {
+        "advertiser_name": "Sunsweet",
+        "overall_spend": 1628.497,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 94700,
+        "win_rate": 0.00573389651531151
+      },
+      {
+        "advertiser_name": "FDJ",
+        "overall_spend": 1520.19,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 573,
+        "win_rate": 0.6020942408376964
+      },
+      {
+        "advertiser_name": "trlegal",
+        "overall_spend": 1472.335,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 2891,
+        "win_rate": 0.6866136285022484
+      },
+      {
+        "advertiser_name": "Kobo",
+        "overall_spend": 1338.87,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 278,
+        "win_rate": 0.4676258992805755
+      },
+      {
+        "advertiser_name": "Plante Moran",
+        "overall_spend": 1161.917,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 136,
+        "win_rate": 0.6102941176470589
+      },
+      {
+        "advertiser_name": "El Lagar",
+        "overall_spend": 1037.925,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 636,
+        "win_rate": 0.10220125786163523
+      },
+      {
+        "advertiser_name": "Upwork",
+        "overall_spend": 843.069,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 1604,
+        "win_rate": 0.40461346633416456
+      },
+      {
+        "advertiser_name": "Total_Wash",
+        "overall_spend": 754.58,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 1643,
+        "win_rate": 0.209373097991479
+      },
+      {
+        "advertiser_name": "Ball Aluminum Cups",
+        "overall_spend": 608.274,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 706,
+        "win_rate": 0.5481586402266289
+      },
+      {
+        "advertiser_name": "Toyota",
+        "overall_spend": 605.991,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 1912,
+        "win_rate": 0.2625523012552301
+      },
+      {
+        "advertiser_name": "Boll and Branch",
+        "overall_spend": 515.985,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 585,
+        "win_rate": 0.5042735042735043
+      },
+      {
+        "advertiser_name": "Denny's",
+        "overall_spend": 461.967,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 59,
+        "win_rate": 0.559322033898305
+      },
+      {
+        "advertiser_name": "Cook Unity",
+        "overall_spend": 441.953,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 43972,
+        "win_rate": 0.0010688620030928774
+      },
+      {
+        "advertiser_name": "Bic",
+        "overall_spend": 399.673,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 223,
+        "win_rate": 0.5246636771300448
+      },
+      {
+        "advertiser_name": "tremendous",
+        "overall_spend": 376.005,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 732,
+        "win_rate": 0.48360655737704916
+      },
+      {
+        "advertiser_name": "Fit Crunch",
+        "overall_spend": 363.974,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 313,
+        "win_rate": 0.08306709265175719
+      },
+      {
+        "advertiser_name": "EverlyWell",
+        "overall_spend": 351.039,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 549,
+        "win_rate": 0.0965391621129326
+      },
+      {
+        "advertiser_name": "Clorox",
+        "overall_spend": 340.139,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 207,
+        "win_rate": 0.5990338164251208
+      },
+      {
+        "advertiser_name": "Mediaspace Solutions",
+        "overall_spend": 335.976,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 47,
+        "win_rate": 0.5106382978723404
+      },
+      {
+        "advertiser_name": "Abiomed",
+        "overall_spend": 321.977,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 36,
+        "win_rate": 0.6388888888888888
+      },
+      {
+        "advertiser_name": "Nestle",
+        "overall_spend": 315.426,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 2003,
+        "win_rate": 0.4328507239141288
+      },
+      {
+        "advertiser_name": "Ubigi",
+        "overall_spend": 295.12,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 731,
+        "win_rate": 0.09302325581395349
+      },
+      {
+        "advertiser_name": "Aadi Bioscience",
+        "overall_spend": 223.984,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 28,
+        "win_rate": 0.5714285714285714
+      },
+      {
+        "advertiser_name": "TRAVEL CLUB BCH",
+        "overall_spend": 193.065,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 138,
+        "win_rate": 0.5
+      },
+      {
+        "advertiser_name": "Grocery Outlet",
+        "overall_spend": 168.913,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 2885,
+        "win_rate": 0.17885615251299827
+      },
+      {
+        "advertiser_name": "Warby Parker",
+        "overall_spend": 166.428,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 216,
+        "win_rate": 0.33796296296296297
+      },
+      {
+        "advertiser_name": "Casper",
+        "overall_spend": 141.931,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 29278,
+        "win_rate": 0.0024250290320377075
+      },
+      {
+        "advertiser_name": "Whole Foods",
+        "overall_spend": 138.368,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 41,
+        "win_rate": 0.5853658536585366
+      },
+      {
+        "advertiser_name": "Visa ",
+        "overall_spend": 135.277,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 192,
+        "win_rate": 0.640625
+      },
+      {
+        "advertiser_name": "Laurel Eye Clinic",
+        "overall_spend": 134.323,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 149,
+        "win_rate": 0.5503355704697986
+      },
+      {
+        "advertiser_name": "Florida Lottery",
+        "overall_spend": 89.985,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 31,
+        "win_rate": 0.4838709677419355
+      },
+      {
+        "advertiser_name": "USAA",
+        "overall_spend": 89.744,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 103,
+        "win_rate": 0.5436893203883495
+      },
+      {
+        "advertiser_name": "Facebook",
+        "overall_spend": 77.588,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 827,
+        "win_rate": 0.1354292623941959
+      },
+      {
+        "advertiser_name": "VeryChic",
+        "overall_spend": 62.148,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 90,
+        "win_rate": 0.7111111111111111
+      },
+      {
+        "advertiser_name": "H&R Block",
+        "overall_spend": 44.962,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 47,
+        "win_rate": 0.3829787234042553
+      },
+      {
+        "advertiser_name": "Udemy",
+        "overall_spend": 36.315,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 555,
+        "win_rate": 0.1009009009009009
+      },
+      {
+        "advertiser_name": "Uncle Ben's",
+        "overall_spend": 26.744,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 25,
+        "win_rate": 0.52
+      },
+      {
+        "advertiser_name": "Turbo Tax",
+        "overall_spend": 24.61,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 27,
+        "win_rate": 0.37037037037037035
+      },
+      {
+        "advertiser_name": "vertex",
+        "overall_spend": 17.759,
+        "timestamp_day": "2025-12-28T00:00:00Z",
+        "total_bids": 90,
+        "win_rate": 0.4444444444444444
+      }
+    ]
+  },
+  "metadata": {
+    "description": "Complex query with time_floor and filters using dict",
+    "time_range": "2025-12-26 to 2026-01-02"
+  }
+}

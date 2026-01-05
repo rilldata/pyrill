@@ -1,0 +1,123 @@
+{
+  "test_name": "metrics_query_with_filter",
+  "org": "demo",
+  "project": "rill-openrtb-prog-ads",
+  "query": {
+    "metrics_view": "bids_metrics",
+    "dimensions": [
+      {
+        "name": "advertiser_name",
+        "compute": null
+      },
+      {
+        "name": "campaign_name",
+        "compute": null
+      }
+    ],
+    "measures": [
+      {
+        "name": "overall_spend",
+        "compute": null
+      },
+      {
+        "name": "total_bids",
+        "compute": null
+      },
+      {
+        "name": "clicks",
+        "compute": null
+      },
+      {
+        "name": "ctr",
+        "compute": null
+      }
+    ],
+    "where": {
+      "name": null,
+      "val": null,
+      "cond": {
+        "op": "eq",
+        "exprs": [
+          {
+            "name": "device_type",
+            "val": null,
+            "cond": null,
+            "subquery": null
+          },
+          {
+            "name": null,
+            "val": "mobile",
+            "cond": null,
+            "subquery": null
+          }
+        ]
+      },
+      "subquery": null
+    },
+    "having": null,
+    "time_range": {
+      "start": "2025-12-29T00:00:00+00:00",
+      "end": "2026-01-03T00:00:00+00:00",
+      "iso_duration": null,
+      "iso_offset": null,
+      "expression": null,
+      "round_to_grain": null
+    },
+    "comparison_time_range": null,
+    "spine": null,
+    "sort": [
+      {
+        "name": "overall_spend",
+        "desc": true
+      }
+    ],
+    "limit": 30,
+    "offset": null,
+    "pivot_on": null,
+    "time_zone": null,
+    "use_display_names": null,
+    "rows": null
+  },
+  "url": {
+    "string": "https://ui.rilldata.com/demo/rill-openrtb-prog-ads/explore/bids_explore?tr=2025-12-29+to+2026-01-03&measures=overall_spend,total_bids,clicks,ctr&dims=advertiser_name,campaign_name&sort_dir=DESC&sort_by=overall_spend&leaderboard_measures=overall_spend,total_bids,clicks,ctr&grain=day",
+    "components": {
+      "base_url": "https://ui.rilldata.com",
+      "org": "demo",
+      "project": "rill-openrtb-prog-ads",
+      "page_type": "explore",
+      "page_name": "bids_explore",
+      "time_range": "2025-12-29 to 2026-01-03",
+      "timezone": null,
+      "measures": [
+        "overall_spend",
+        "total_bids",
+        "clicks",
+        "ctr"
+      ],
+      "dimensions": [
+        "advertiser_name",
+        "campaign_name"
+      ],
+      "sort_dir": "DESC",
+      "sort_by": "overall_spend",
+      "leaderboard_measures": [
+        "overall_spend",
+        "total_bids",
+        "clicks",
+        "ctr"
+      ],
+      "view": null,
+      "rows": null,
+      "cols": null,
+      "table_mode": null,
+      "grain": "day",
+      "compare_time_range": null
+    }
+  },
+  "metadata": {
+    "description": "Mobile device campaigns sorted by spend",
+    "filter": "device_type = 'mobile'",
+    "time_range": "2025-12-29 to 2026-01-03",
+    "warning": "WHERE clause cannot be encoded in URL - URL generated without filter"
+  }
+}

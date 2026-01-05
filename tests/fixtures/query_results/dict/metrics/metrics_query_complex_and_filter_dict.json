@@ -1,0 +1,238 @@
+{
+  "test_name": "metrics_query_complex_and_filter_dict",
+  "org": "demo",
+  "project": "rill-openrtb-prog-ads",
+  "query": {
+    "metrics_view": "bids_metrics",
+    "dimensions": [
+      {
+        "name": "advertiser_name"
+      },
+      {
+        "name": "device_type"
+      },
+      {
+        "name": "device_region"
+      }
+    ],
+    "measures": [
+      {
+        "name": "overall_spend"
+      },
+      {
+        "name": "total_bids"
+      },
+      {
+        "name": "impressions"
+      }
+    ],
+    "where": {
+      "cond": {
+        "op": "and",
+        "exprs": [
+          {
+            "cond": {
+              "op": "eq",
+              "exprs": [
+                {
+                  "name": "device_type"
+                },
+                {
+                  "val": "Mobile/Tablet"
+                }
+              ]
+            }
+          },
+          {
+            "cond": {
+              "op": "in",
+              "exprs": [
+                {
+                  "name": "device_region"
+                },
+                {
+                  "val": [
+                    "US",
+                    "GB",
+                    "CA"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "time_range": {
+      "start": "2025-12-29T00:00:00+00:00",
+      "end": "2026-01-02T00:00:00+00:00"
+    },
+    "sort": [
+      {
+        "name": "overall_spend",
+        "desc": true
+      }
+    ],
+    "limit": 30
+  },
+  "result": {
+    "data": [
+      {
+        "advertiser_name": "Hyundai",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 15,
+        "overall_spend": 87.52,
+        "total_bids": 44
+      },
+      {
+        "advertiser_name": "Instacart",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 8,
+        "overall_spend": 69.107,
+        "total_bids": 24
+      },
+      {
+        "advertiser_name": "Epizyme",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 1,
+        "overall_spend": 13.999,
+        "total_bids": 1
+      },
+      {
+        "advertiser_name": "ESPACIO URBANO",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 1,
+        "overall_spend": 13.999,
+        "total_bids": 1
+      },
+      {
+        "advertiser_name": "ConvenientMD",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 2,
+        "overall_spend": 8.999,
+        "total_bids": 2
+      },
+      {
+        "advertiser_name": "Spero Foods",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 1,
+        "overall_spend": 4.499,
+        "total_bids": 1
+      },
+      {
+        "advertiser_name": "Toosla",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 0,
+        "overall_spend": 0,
+        "total_bids": 5
+      },
+      {
+        "advertiser_name": "Pure Life",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 0,
+        "overall_spend": 0,
+        "total_bids": 1
+      },
+      {
+        "advertiser_name": "drakesoftware",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 0,
+        "overall_spend": 0,
+        "total_bids": 3
+      },
+      {
+        "advertiser_name": "Molson Coors",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 0,
+        "overall_spend": 0,
+        "total_bids": 1
+      },
+      {
+        "advertiser_name": "Johnson & Johnson",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 0,
+        "overall_spend": 0,
+        "total_bids": 1
+      },
+      {
+        "advertiser_name": "GlaxoSmithKline",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 0,
+        "overall_spend": 0,
+        "total_bids": 1
+      },
+      {
+        "advertiser_name": "Sunsweet",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 0,
+        "overall_spend": 0,
+        "total_bids": 1
+      },
+      {
+        "advertiser_name": "Truvia",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 0,
+        "overall_spend": 0,
+        "total_bids": 1
+      },
+      {
+        "advertiser_name": "Franprix",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 0,
+        "overall_spend": 0,
+        "total_bids": 1
+      },
+      {
+        "advertiser_name": "Casper",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 0,
+        "overall_spend": 0,
+        "total_bids": 1
+      },
+      {
+        "advertiser_name": "Fit Crunch",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 0,
+        "overall_spend": 0,
+        "total_bids": 1
+      },
+      {
+        "advertiser_name": "Ouicar",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 0,
+        "overall_spend": 0,
+        "total_bids": 3
+      },
+      {
+        "advertiser_name": "TACO BELL ",
+        "device_region": "CA",
+        "device_type": "Mobile/Tablet",
+        "impressions": 0,
+        "overall_spend": 0,
+        "total_bids": 1
+      }
+    ]
+  },
+  "metadata": {
+    "description": "Complex AND filter using dict",
+    "filter": "device_type = 'Mobile/Tablet' AND device_region IN ('US', 'GB', 'CA')"
+  }
+}

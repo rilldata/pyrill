@@ -1,0 +1,104 @@
+{
+  "test_name": "query_builder_time_dimension",
+  "org": "demo",
+  "project": "rill-openrtb-prog-ads",
+  "query": {
+    "metrics_view": "bids_metrics",
+    "dimensions": [
+      {
+        "name": "timestamp_day",
+        "compute": {
+          "time_floor": {
+            "dimension": "__time",
+            "grain": "day"
+          }
+        }
+      },
+      {
+        "name": "advertiser_name",
+        "compute": null
+      }
+    ],
+    "measures": [
+      {
+        "name": "overall_spend",
+        "compute": null
+      },
+      {
+        "name": "total_bids",
+        "compute": null
+      },
+      {
+        "name": "win_rate",
+        "compute": null
+      }
+    ],
+    "where": null,
+    "having": null,
+    "time_range": {
+      "start": "2025-12-27T00:00:00+00:00",
+      "end": "2026-01-03T00:00:00+00:00",
+      "iso_duration": null,
+      "iso_offset": null,
+      "expression": null,
+      "round_to_grain": null
+    },
+    "comparison_time_range": null,
+    "spine": null,
+    "sort": [
+      {
+        "name": "timestamp_day",
+        "desc": false
+      },
+      {
+        "name": "overall_spend",
+        "desc": true
+      }
+    ],
+    "limit": 100,
+    "offset": null,
+    "pivot_on": null,
+    "time_zone": null,
+    "use_display_names": null,
+    "rows": null
+  },
+  "url": {
+    "string": "https://ui.rilldata.com/demo/rill-openrtb-prog-ads/explore/bids_explore?tr=2025-12-27+to+2026-01-03&measures=overall_spend,total_bids,win_rate&dims=timestamp_day,advertiser_name&sort_dir=ASC&sort_by=timestamp_day&leaderboard_measures=overall_spend,total_bids,win_rate&grain=day",
+    "components": {
+      "base_url": "https://ui.rilldata.com",
+      "org": "demo",
+      "project": "rill-openrtb-prog-ads",
+      "page_type": "explore",
+      "page_name": "bids_explore",
+      "time_range": "2025-12-27 to 2026-01-03",
+      "timezone": null,
+      "measures": [
+        "overall_spend",
+        "total_bids",
+        "win_rate"
+      ],
+      "dimensions": [
+        "timestamp_day",
+        "advertiser_name"
+      ],
+      "sort_dir": "ASC",
+      "sort_by": "timestamp_day",
+      "leaderboard_measures": [
+        "overall_spend",
+        "total_bids",
+        "win_rate"
+      ],
+      "view": null,
+      "rows": null,
+      "cols": null,
+      "table_mode": null,
+      "grain": "day",
+      "compare_time_range": null
+    }
+  },
+  "metadata": {
+    "description": "QueryBuilder: Time-series query with daily granularity by advertiser",
+    "time_range": "2025-12-27 to 2026-01-03",
+    "note": "Built using QueryBuilder fluent API"
+  }
+}

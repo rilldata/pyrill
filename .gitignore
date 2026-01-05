@@ -1,0 +1,33 @@
+# IDE-specific directories
+.claude/
+.cursor/
+
+# Python virtual environment and caches
+.venv/
+*.pyc
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Test and coverage artifacts
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+debug/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Beads viewer local config and caches
+.bv/
+
+# Keep these files tracked
+!pyrill.code-workspace
+!README.md
+!CLAUDE.md
+!AGENTS.md
+!RILL-CONTRIBUTING.md

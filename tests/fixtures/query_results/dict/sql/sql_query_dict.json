@@ -1,0 +1,24 @@
+{
+  "test_name": "sql_query_dict",
+  "org": "demo",
+  "project": "rill-openrtb-prog-ads",
+  "query": {
+    "sql": "\n            SELECT\n                COUNT(*) as total_rows,\n                COUNT(DISTINCT advertiser_name) as unique_advertisers,\n                COUNT(DISTINCT campaign_name) as unique_campaigns,\n                COUNT(DISTINCT device_type) as unique_device_types,\n                MIN(__time) as earliest_date,\n                MAX(__time) as latest_date\n            FROM bids_data_model\n            ",
+    "connector": "duckdb"
+  },
+  "result": {
+    "data": [
+      {
+        "earliest_date": "2025-12-28T09:56:52.090484Z",
+        "latest_date": "2026-01-04T09:56:52.090484Z",
+        "total_rows": 1569315,
+        "unique_advertisers": 164,
+        "unique_campaigns": 209,
+        "unique_device_types": 9
+      }
+    ]
+  },
+  "metadata": {
+    "description": "Raw SQL query using plain Python dict"
+  }
+}

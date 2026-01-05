@@ -1,0 +1,136 @@
+{
+  "test_name": "metrics_sql_query_dict",
+  "org": "demo",
+  "project": "rill-openrtb-prog-ads",
+  "query": {
+    "sql": "\n            SELECT\n                advertiser_name,\n                device_type,\n                overall_spend,\n                total_bids\n            FROM bids_metrics\n            ORDER BY overall_spend DESC\n            LIMIT 20\n            "
+  },
+  "result": {
+    "data": [
+      {
+        "advertiser_name": "Hyundai",
+        "device_type": "Mobile/Tablet",
+        "overall_spend": 166151.188,
+        "total_bids": 175334
+      },
+      {
+        "advertiser_name": "Hyundai",
+        "device_type": "Personal Computer",
+        "overall_spend": 73264.545,
+        "total_bids": 69861
+      },
+      {
+        "advertiser_name": "Instacart",
+        "device_type": "Mobile/Tablet",
+        "overall_spend": 71511.506,
+        "total_bids": 93943
+      },
+      {
+        "advertiser_name": "Amgen Inc",
+        "device_type": "Mobile/Tablet",
+        "overall_spend": 50099.588,
+        "total_bids": 93500
+      },
+      {
+        "advertiser_name": "drakesoftware",
+        "device_type": "Mobile/Tablet",
+        "overall_spend": 43992.669,
+        "total_bids": 15531
+      },
+      {
+        "advertiser_name": "GlaxoSmithKline",
+        "device_type": "Mobile/Tablet",
+        "overall_spend": 37739.271,
+        "total_bids": 68367
+      },
+      {
+        "advertiser_name": "Johnson & Johnson",
+        "device_type": "Mobile/Tablet",
+        "overall_spend": 34744.81,
+        "total_bids": 54137
+      },
+      {
+        "advertiser_name": "Leafly",
+        "device_type": "Mobile/Tablet",
+        "overall_spend": 32047.636,
+        "total_bids": 9878
+      },
+      {
+        "advertiser_name": "drakesoftware",
+        "device_type": "Set Top Box[NR1]",
+        "overall_spend": 25346.286,
+        "total_bids": 14304
+      },
+      {
+        "advertiser_name": "Hennessy",
+        "device_type": "Tablet",
+        "overall_spend": 23168.345,
+        "total_bids": 3495
+      },
+      {
+        "advertiser_name": "ESPACIO URBANO",
+        "device_type": "Mobile/Tablet",
+        "overall_spend": 22800.141,
+        "total_bids": 5603
+      },
+      {
+        "advertiser_name": "Leafly",
+        "device_type": "Personal Computer",
+        "overall_spend": 22741.715,
+        "total_bids": 6494
+      },
+      {
+        "advertiser_name": "Instacart",
+        "device_type": "Personal Computer",
+        "overall_spend": 21956.289,
+        "total_bids": 7719
+      },
+      {
+        "advertiser_name": "Chequing",
+        "device_type": "Mobile/Tablet",
+        "overall_spend": 21796.229,
+        "total_bids": 505064
+      },
+      {
+        "advertiser_name": "Clorox",
+        "device_type": "Mobile/Tablet",
+        "overall_spend": 20525.148,
+        "total_bids": 15998
+      },
+      {
+        "advertiser_name": "Unreal Deli",
+        "device_type": "Mobile/Tablet",
+        "overall_spend": 19741.546,
+        "total_bids": 7436
+      },
+      {
+        "advertiser_name": "ConvenientMD",
+        "device_type": "Mobile/Tablet",
+        "overall_spend": 19367.039,
+        "total_bids": 7035
+      },
+      {
+        "advertiser_name": "Spero Foods",
+        "device_type": "Mobile/Tablet",
+        "overall_spend": 15671.607,
+        "total_bids": 14523
+      },
+      {
+        "advertiser_name": "Dr. Pepper Keurig",
+        "device_type": "Set Top Box[NR1]",
+        "overall_spend": 15309.883,
+        "total_bids": 3662
+      },
+      {
+        "advertiser_name": "drakesoftware",
+        "device_type": "Personal Computer",
+        "overall_spend": 14530.199,
+        "total_bids": 8683
+      }
+    ]
+  },
+  "metadata": {
+    "description": "Metrics SQL query using plain Python dict - queries pre-aggregated metrics view",
+    "note": "Metrics-SQL queries the metrics view directly (no GROUP BY/aggregations needed)"
+  }
+}

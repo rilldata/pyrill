@@ -1,0 +1,297 @@
+{
+  "test_name": "metrics_query_iso_duration_time_range",
+  "org": "demo",
+  "project": "rill-openrtb-prog-ads",
+  "query": {
+    "metrics_view": "bids_metrics",
+    "dimensions": [
+      {
+        "name": "advertiser_name",
+        "compute": null
+      },
+      {
+        "name": "device_type",
+        "compute": null
+      },
+      {
+        "name": "creative_type",
+        "compute": null
+      }
+    ],
+    "measures": [
+      {
+        "name": "overall_spend",
+        "compute": null
+      },
+      {
+        "name": "impressions",
+        "compute": null
+      },
+      {
+        "name": "video_completes",
+        "compute": null
+      },
+      {
+        "name": "video_completion_rate",
+        "compute": null
+      }
+    ],
+    "where": null,
+    "having": null,
+    "time_range": {
+      "start": null,
+      "end": null,
+      "iso_duration": "P7D",
+      "iso_offset": null,
+      "expression": null,
+      "round_to_grain": null
+    },
+    "comparison_time_range": null,
+    "spine": null,
+    "sort": [
+      {
+        "name": "video_completes",
+        "desc": true
+      }
+    ],
+    "limit": 25,
+    "offset": null,
+    "pivot_on": null,
+    "time_zone": null,
+    "use_display_names": null,
+    "rows": null
+  },
+  "result": {
+    "data": [
+      {
+        "advertiser_name": "drakesoftware",
+        "creative_type": "VIDEO",
+        "device_type": "Mobile/Tablet",
+        "impressions": 5705,
+        "overall_spend": 43914.682,
+        "video_completes": 5047,
+        "video_completion_rate": 0.8857493857493858
+      },
+      {
+        "advertiser_name": "Amgen Inc",
+        "creative_type": "VIDEO",
+        "device_type": "Mobile/Tablet",
+        "impressions": 4612,
+        "overall_spend": 48226.574,
+        "video_completes": 3098,
+        "video_completion_rate": 0.6820783795684721
+      },
+      {
+        "advertiser_name": "Instacart",
+        "creative_type": "VIDEO",
+        "device_type": "Mobile/Tablet",
+        "impressions": 10760,
+        "overall_spend": 68166.538,
+        "video_completes": 2384,
+        "video_completion_rate": 0.22408121064009776
+      },
+      {
+        "advertiser_name": "Johnson & Johnson",
+        "creative_type": "VIDEO",
+        "device_type": "Mobile/Tablet",
+        "impressions": 2480,
+        "overall_spend": 34688.814,
+        "video_completes": 2275,
+        "video_completion_rate": 0.9285714285714286
+      },
+      {
+        "advertiser_name": "drakesoftware",
+        "creative_type": "VIDEO",
+        "device_type": "Personal Computer",
+        "impressions": 2427,
+        "overall_spend": 14530.199,
+        "video_completes": 2017,
+        "video_completion_rate": 0.8317525773195876
+      },
+      {
+        "advertiser_name": "drakesoftware",
+        "creative_type": "VIDEO",
+        "device_type": "Set Top Box[NR1]",
+        "impressions": 1848,
+        "overall_spend": 25305.687,
+        "video_completes": 1764,
+        "video_completion_rate": 0.9555796316359697
+      },
+      {
+        "advertiser_name": "GlaxoSmithKline",
+        "creative_type": "VIDEO",
+        "device_type": "Mobile/Tablet",
+        "impressions": 1979,
+        "overall_spend": 27685.591,
+        "video_completes": 1700,
+        "video_completion_rate": 0.8607594936708861
+      },
+      {
+        "advertiser_name": "Leafly",
+        "creative_type": "VIDEO",
+        "device_type": "Personal Computer",
+        "impressions": 4397,
+        "overall_spend": 22111.949,
+        "video_completes": 1587,
+        "video_completion_rate": 0.3636571952337305
+      },
+      {
+        "advertiser_name": "Dr. Pepper Keurig",
+        "creative_type": "VIDEO",
+        "device_type": "Set Top Box[NR1]",
+        "impressions": 1591,
+        "overall_spend": 15309.883,
+        "video_completes": 1560,
+        "video_completion_rate": 0.9805153991200503
+      },
+      {
+        "advertiser_name": "Hennessy",
+        "creative_type": "VIDEO",
+        "device_type": "Tablet",
+        "impressions": 1655,
+        "overall_spend": 23168.345,
+        "video_completes": 1552,
+        "video_completion_rate": 0.9406060606060606
+      },
+      {
+        "advertiser_name": "ESPACIO URBANO",
+        "creative_type": "VIDEO",
+        "device_type": "Mobile/Tablet",
+        "impressions": 1560,
+        "overall_spend": 21821.145,
+        "video_completes": 1435,
+        "video_completion_rate": 0.9228295819935691
+      },
+      {
+        "advertiser_name": "Unreal Deli",
+        "creative_type": "VIDEO",
+        "device_type": "Mobile/Tablet",
+        "impressions": 4475,
+        "overall_spend": 19687.564,
+        "video_completes": 1393,
+        "video_completion_rate": 0.315158371040724
+      },
+      {
+        "advertiser_name": "American Family Insurance",
+        "creative_type": "VIDEO",
+        "device_type": "Personal Computer",
+        "impressions": 2558,
+        "overall_spend": 14274.646,
+        "video_completes": 1388,
+        "video_completion_rate": 0.5672251736820597
+      },
+      {
+        "advertiser_name": "Instacart",
+        "creative_type": "VIDEO",
+        "device_type": "Personal Computer",
+        "impressions": 4307,
+        "overall_spend": 21255.895,
+        "video_completes": 1226,
+        "video_completion_rate": 0.28867435837061456
+      },
+      {
+        "advertiser_name": "Leafly",
+        "creative_type": "VIDEO",
+        "device_type": "Mobile/Tablet",
+        "impressions": 6446,
+        "overall_spend": 31274.201,
+        "video_completes": 1180,
+        "video_completion_rate": 0.1857682619647355
+      },
+      {
+        "advertiser_name": "ConvenientMD",
+        "creative_type": "VIDEO",
+        "device_type": "Mobile/Tablet",
+        "impressions": 4424,
+        "overall_spend": 19313.057,
+        "video_completes": 1085,
+        "video_completion_rate": 0.25063525063525066
+      },
+      {
+        "advertiser_name": "TRAVEL CLUB BCH",
+        "creative_type": "VIDEO",
+        "device_type": "Mobile/Tablet",
+        "impressions": 1128,
+        "overall_spend": 3153.145,
+        "video_completes": 1079,
+        "video_completion_rate": 0.9582593250444049
+      },
+      {
+        "advertiser_name": "ESPACIO URBANO",
+        "creative_type": "VIDEO",
+        "device_type": "Set Top Box[NR1]",
+        "impressions": 975,
+        "overall_spend": 13225.774,
+        "video_completes": 960,
+        "video_completion_rate": 0.986639260020555
+      },
+      {
+        "advertiser_name": "Total_Wash",
+        "creative_type": "VIDEO",
+        "device_type": "Mobile/Tablet",
+        "impressions": 1045,
+        "overall_spend": 4535.3,
+        "video_completes": 950,
+        "video_completion_rate": 0.9090909090909091
+      },
+      {
+        "advertiser_name": "Truvia",
+        "creative_type": "VIDEO",
+        "device_type": "Mobile/Tablet",
+        "impressions": 1512,
+        "overall_spend": 2947.25,
+        "video_completes": 918,
+        "video_completion_rate": 0.6219512195121951
+      },
+      {
+        "advertiser_name": "Instacart",
+        "creative_type": "VIDEO",
+        "device_type": "Set Top Box[NR1]",
+        "impressions": 925,
+        "overall_spend": 12427.856,
+        "video_completes": 895,
+        "video_completion_rate": 0.9686147186147186
+      },
+      {
+        "advertiser_name": "Aadi Bioscience",
+        "creative_type": "VIDEO",
+        "device_type": "Set Top Box[NR1]",
+        "impressions": 913,
+        "overall_spend": 12554.485,
+        "video_completes": 860,
+        "video_completion_rate": 0.9429824561403509
+      },
+      {
+        "advertiser_name": "Epizyme",
+        "creative_type": "VIDEO",
+        "device_type": "Mobile/Tablet",
+        "impressions": 938,
+        "overall_spend": 13125.452,
+        "video_completes": 855,
+        "video_completion_rate": 0.9263271939328277
+      },
+      {
+        "advertiser_name": "Instacart",
+        "creative_type": "VIDEO",
+        "device_type": "Connected TV",
+        "impressions": 897,
+        "overall_spend": 10007.591,
+        "video_completes": 852,
+        "video_completion_rate": 0.9508928571428571
+      },
+      {
+        "advertiser_name": "Ubigi",
+        "creative_type": "VIDEO",
+        "device_type": "Mobile/Tablet",
+        "impressions": 930,
+        "overall_spend": 4036.2,
+        "video_completes": 843,
+        "video_completion_rate": 0.9064516129032258
+      }
+    ]
+  },
+  "metadata": {
+    "description": "Video performance metrics over last 7 days using iso_duration parameter",
+    "time_range": "iso_duration='P7D'"
+  }
+}

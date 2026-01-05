@@ -1,0 +1,280 @@
+{
+  "total_tests": 34,
+  "org": "demo",
+  "project": "rill-openrtb-prog-ads",
+  "metrics_view": null,
+  "results": [
+    {
+      "test_name": "basic_metrics_query_dict",
+      "rows_returned": 20,
+      "file": "dict/metrics/basic_metrics_query_dict.json",
+      "description": "Basic metrics query using plain Python dict",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "complex_metrics_query_dict",
+      "rows_returned": 50,
+      "file": "dict/metrics/complex_metrics_query_dict.json",
+      "description": "Complex query with time_floor and filters using dict",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "metrics_query_complex_and_filter_dict",
+      "rows_returned": 19,
+      "file": "dict/metrics/metrics_query_complex_and_filter_dict.json",
+      "description": "Complex AND filter using dict",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "metrics_sql_query_dict",
+      "rows_returned": 20,
+      "file": "dict/metrics_sql/metrics_sql_query_dict.json",
+      "description": "Metrics SQL query using plain Python dict - queries pre-aggregated metrics view",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "sql_query_dict",
+      "rows_returned": 1,
+      "file": "dict/sql/sql_query_dict.json",
+      "description": "Raw SQL query using plain Python dict",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "query_builder_complex_filter",
+      "rows_returned": 0,
+      "file": "object/builder/query_builder_complex_filter.json",
+      "description": "QueryBuilder: Mobile campaigns in US, GB, CA regions",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "query_builder_time_dimension",
+      "rows_returned": 100,
+      "file": "object/builder/query_builder_time_dimension.json",
+      "description": "QueryBuilder: Time-series query with daily granularity by advertiser",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "basic_metrics_query",
+      "rows_returned": 20,
+      "file": "object/metrics/basic_metrics_query.json",
+      "description": "Basic metrics query with advertiser and device dimensions",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "metrics_query_complex_filter",
+      "rows_returned": 0,
+      "file": "object/metrics/metrics_query_complex_filter.json",
+      "description": "Mobile campaigns in US, GB, CA regions",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "metrics_query_expression_time_range",
+      "rows_returned": 25,
+      "file": "object/metrics/metrics_query_expression_time_range.json",
+      "description": "Video performance metrics using expression parameter",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "metrics_query_iso_duration_time_range",
+      "rows_returned": 25,
+      "file": "object/metrics/metrics_query_iso_duration_time_range.json",
+      "description": "Video performance metrics over last 7 days using iso_duration parameter",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "metrics_query_time_dimension",
+      "rows_returned": 100,
+      "file": "object/metrics/metrics_query_time_dimension.json",
+      "description": "Time-series query with daily granularity by advertiser",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "metrics_query_with_filter",
+      "rows_returned": 0,
+      "file": "object/metrics/metrics_query_with_filter.json",
+      "description": "Mobile device campaigns sorted by spend",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "basic_metrics_sql",
+      "rows_returned": 20,
+      "file": "object/metrics_sql/basic_metrics_sql.json",
+      "description": "Metrics SQL query - queries pre-aggregated metrics view",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "basic_sql_query",
+      "rows_returned": 1,
+      "file": "object/sql/basic_sql_query.json",
+      "description": "Dataset summary statistics",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "EXAMPLE_basic_metrics_query",
+      "rows_returned": 0,
+      "file": "object/urls/EXAMPLE.json",
+      "description": "EXAMPLE: Basic metrics query with advertiser and device dimensions",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "query_builder_complex_filter",
+      "rows_returned": 0,
+      "file": "object/urls/builder/query_builder_complex_filter.json",
+      "description": "QueryBuilder: Mobile campaigns in US, GB, CA regions",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "query_builder_time_dimension",
+      "rows_returned": 0,
+      "file": "object/urls/builder/query_builder_time_dimension.json",
+      "description": "QueryBuilder: Time-series query with daily granularity by advertiser",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "basic_metrics_query",
+      "rows_returned": 0,
+      "file": "object/urls/metrics/basic_metrics_query.json",
+      "description": "Basic metrics query with advertiser and device dimensions",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "metrics_query_complex_filter",
+      "rows_returned": 0,
+      "file": "object/urls/metrics/metrics_query_complex_filter.json",
+      "description": "Mobile campaigns in US, GB, CA regions",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "metrics_query_expression_time_range",
+      "rows_returned": 0,
+      "file": "object/urls/metrics/metrics_query_expression_time_range.json",
+      "description": "Video performance metrics using expression parameter",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "metrics_query_iso_duration_time_range",
+      "rows_returned": 0,
+      "file": "object/urls/metrics/metrics_query_iso_duration_time_range.json",
+      "description": "Video performance metrics over last 7 days using iso_duration",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "metrics_query_time_dimension",
+      "rows_returned": 0,
+      "file": "object/urls/metrics/metrics_query_time_dimension.json",
+      "description": "Time-series query with daily granularity by advertiser",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "metrics_query_with_filter",
+      "rows_returned": 0,
+      "file": "object/urls/metrics/metrics_query_with_filter.json",
+      "description": "Mobile device campaigns sorted by spend",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "url_comparison_disabled",
+      "rows_returned": 0,
+      "file": "object/urls/variations/url_comparison_disabled.json",
+      "description": "URL without comparison",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "url_comparison_enabled",
+      "rows_returned": 0,
+      "file": "object/urls/variations/url_comparison_enabled.json",
+      "description": "URL with prior period comparison",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "url_leaderboard_multi",
+      "rows_returned": 0,
+      "file": "object/urls/variations/url_leaderboard_multi.json",
+      "description": "All measures in leaderboard",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "url_leaderboard_single",
+      "rows_returned": 0,
+      "file": "object/urls/variations/url_leaderboard_single.json",
+      "description": "Only first measure in leaderboard",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "url_pivot_mode_pivot",
+      "rows_returned": 0,
+      "file": "object/urls/variations/url_pivot_mode_pivot.json",
+      "description": "Pivot table view of same query",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "url_pivot_mode_standard",
+      "rows_returned": 0,
+      "file": "object/urls/variations/url_pivot_mode_standard.json",
+      "description": "Standard explore view (for comparison with pivot)",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "url_timezone_America_New_York",
+      "rows_returned": 0,
+      "file": "object/urls/variations/url_timezone_America_New_York.json",
+      "description": "URL with Eastern Time timezone",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "url_timezone_Asia_Tokyo",
+      "rows_returned": 0,
+      "file": "object/urls/variations/url_timezone_Asia_Tokyo.json",
+      "description": "URL with Japan Time timezone",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "url_timezone_Europe_London",
+      "rows_returned": 0,
+      "file": "object/urls/variations/url_timezone_Europe_London.json",
+      "description": "URL with British Time timezone",
+      "is_error": false,
+      "error_message": null
+    },
+    {
+      "test_name": "url_timezone_UTC",
+      "rows_returned": 0,
+      "file": "object/urls/variations/url_timezone_UTC.json",
+      "description": "URL with Coordinated Universal Time timezone",
+      "is_error": false,
+      "error_message": null
+    }
+  ]
+}

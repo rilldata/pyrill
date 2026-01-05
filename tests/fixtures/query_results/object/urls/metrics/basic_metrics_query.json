@@ -1,0 +1,107 @@
+{
+  "test_name": "basic_metrics_query",
+  "org": "demo",
+  "project": "rill-openrtb-prog-ads",
+  "query": {
+    "metrics_view": "bids_metrics",
+    "dimensions": [
+      {
+        "name": "advertiser_name",
+        "compute": null
+      },
+      {
+        "name": "device_type",
+        "compute": null
+      }
+    ],
+    "measures": [
+      {
+        "name": "overall_spend",
+        "compute": null
+      },
+      {
+        "name": "total_bids",
+        "compute": null
+      },
+      {
+        "name": "impressions",
+        "compute": null
+      },
+      {
+        "name": "win_rate",
+        "compute": null
+      }
+    ],
+    "where": null,
+    "having": null,
+    "time_range": {
+      "start": "2025-12-31T00:00:00+00:00",
+      "end": "2026-01-03T00:00:00+00:00",
+      "iso_duration": null,
+      "iso_offset": null,
+      "expression": null,
+      "round_to_grain": null
+    },
+    "comparison_time_range": null,
+    "spine": null,
+    "sort": [
+      {
+        "name": "overall_spend",
+        "desc": true
+      }
+    ],
+    "limit": 20,
+    "offset": null,
+    "pivot_on": null,
+    "time_zone": null,
+    "use_display_names": null,
+    "rows": null
+  },
+  "url": {
+    "string": "https://ui.rilldata.com/demo/rill-openrtb-prog-ads/explore/bids_explore?tr=2025-12-31+to+2026-01-03&measures=overall_spend,total_bids,impressions,win_rate&dims=advertiser_name,device_type&sort_dir=DESC&sort_by=overall_spend&leaderboard_measures=overall_spend,total_bids,impressions,win_rate&grain=day",
+    "components": {
+      "base_url": "https://ui.rilldata.com",
+      "org": "demo",
+      "project": "rill-openrtb-prog-ads",
+      "page_type": "explore",
+      "page_name": "bids_explore",
+      "time_range": "2025-12-31 to 2026-01-03",
+      "timezone": null,
+      "measures": [
+        "overall_spend",
+        "total_bids",
+        "impressions",
+        "win_rate"
+      ],
+      "dimensions": [
+        "advertiser_name",
+        "device_type"
+      ],
+      "sort_dir": "DESC",
+      "sort_by": "overall_spend",
+      "leaderboard_measures": [
+        "overall_spend",
+        "total_bids",
+        "impressions",
+        "win_rate"
+      ],
+      "view": null,
+      "rows": null,
+      "cols": null,
+      "table_mode": null,
+      "grain": "day",
+      "compare_time_range": null
+    }
+  },
+  "metadata": {
+    "description": "Basic metrics query with advertiser and device dimensions",
+    "time_range": "2025-12-31 to 2026-01-03",
+    "expected_params": [
+      "tr",
+      "measures",
+      "dims",
+      "sort_dir",
+      "sort_by"
+    ]
+  }
+}

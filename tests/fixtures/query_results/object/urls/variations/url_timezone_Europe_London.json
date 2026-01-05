@@ -1,0 +1,78 @@
+{
+  "test_name": "url_timezone_Europe_London",
+  "org": "demo",
+  "project": "rill-openrtb-prog-ads",
+  "query": {
+    "metrics_view": "bids_metrics",
+    "dimensions": [
+      {
+        "name": "advertiser_name",
+        "compute": null
+      }
+    ],
+    "measures": [
+      {
+        "name": "overall_spend",
+        "compute": null
+      }
+    ],
+    "where": null,
+    "having": null,
+    "time_range": {
+      "start": null,
+      "end": null,
+      "iso_duration": "P7D",
+      "iso_offset": null,
+      "expression": null,
+      "round_to_grain": null
+    },
+    "comparison_time_range": null,
+    "spine": null,
+    "sort": [
+      {
+        "name": "overall_spend",
+        "desc": true
+      }
+    ],
+    "limit": null,
+    "offset": null,
+    "pivot_on": null,
+    "time_zone": "Europe/London",
+    "use_display_names": null,
+    "rows": null
+  },
+  "url": {
+    "string": "https://ui.rilldata.com/demo/rill-openrtb-prog-ads/explore/bids_explore?tr=P7D&tz=Europe%2FLondon&measures=overall_spend&dims=advertiser_name&sort_dir=DESC&sort_by=overall_spend&leaderboard_measures=overall_spend&grain=day",
+    "components": {
+      "base_url": "https://ui.rilldata.com",
+      "org": "demo",
+      "project": "rill-openrtb-prog-ads",
+      "page_type": "explore",
+      "page_name": "bids_explore",
+      "time_range": "P7D",
+      "timezone": "Europe/London",
+      "measures": [
+        "overall_spend"
+      ],
+      "dimensions": [
+        "advertiser_name"
+      ],
+      "sort_dir": "DESC",
+      "sort_by": "overall_spend",
+      "leaderboard_measures": [
+        "overall_spend"
+      ],
+      "view": null,
+      "rows": null,
+      "cols": null,
+      "table_mode": null,
+      "grain": "day",
+      "compare_time_range": null
+    }
+  },
+  "metadata": {
+    "description": "URL with British Time timezone",
+    "timezone": "Europe/London",
+    "expected_encoding": "tz=Europe%2FLondon"
+  }
+}

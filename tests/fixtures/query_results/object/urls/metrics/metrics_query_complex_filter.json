@@ -1,0 +1,170 @@
+{
+  "test_name": "metrics_query_complex_filter",
+  "org": "demo",
+  "project": "rill-openrtb-prog-ads",
+  "query": {
+    "metrics_view": "bids_metrics",
+    "dimensions": [
+      {
+        "name": "advertiser_name",
+        "compute": null
+      },
+      {
+        "name": "device_type",
+        "compute": null
+      },
+      {
+        "name": "device_region",
+        "compute": null
+      }
+    ],
+    "measures": [
+      {
+        "name": "overall_spend",
+        "compute": null
+      },
+      {
+        "name": "total_bids",
+        "compute": null
+      },
+      {
+        "name": "impressions",
+        "compute": null
+      },
+      {
+        "name": "clicks",
+        "compute": null
+      },
+      {
+        "name": "ctr",
+        "compute": null
+      }
+    ],
+    "where": {
+      "name": null,
+      "val": null,
+      "cond": {
+        "op": "and",
+        "exprs": [
+          {
+            "name": null,
+            "val": null,
+            "cond": {
+              "op": "eq",
+              "exprs": [
+                {
+                  "name": "device_type",
+                  "val": null,
+                  "cond": null,
+                  "subquery": null
+                },
+                {
+                  "name": null,
+                  "val": "mobile",
+                  "cond": null,
+                  "subquery": null
+                }
+              ]
+            },
+            "subquery": null
+          },
+          {
+            "name": null,
+            "val": null,
+            "cond": {
+              "op": "in",
+              "exprs": [
+                {
+                  "name": "device_region",
+                  "val": null,
+                  "cond": null,
+                  "subquery": null
+                },
+                {
+                  "name": null,
+                  "val": [
+                    "US",
+                    "GB",
+                    "CA"
+                  ],
+                  "cond": null,
+                  "subquery": null
+                }
+              ]
+            },
+            "subquery": null
+          }
+        ]
+      },
+      "subquery": null
+    },
+    "having": null,
+    "time_range": {
+      "start": "2025-12-30T00:00:00+00:00",
+      "end": "2026-01-03T00:00:00+00:00",
+      "iso_duration": null,
+      "iso_offset": null,
+      "expression": null,
+      "round_to_grain": null
+    },
+    "comparison_time_range": null,
+    "spine": null,
+    "sort": [
+      {
+        "name": "overall_spend",
+        "desc": true
+      }
+    ],
+    "limit": 50,
+    "offset": null,
+    "pivot_on": null,
+    "time_zone": null,
+    "use_display_names": null,
+    "rows": null
+  },
+  "url": {
+    "string": "https://ui.rilldata.com/demo/rill-openrtb-prog-ads/explore/bids_explore?tr=2025-12-30+to+2026-01-03&measures=overall_spend,total_bids,impressions,clicks,ctr&dims=advertiser_name,device_type,device_region&sort_dir=DESC&sort_by=overall_spend&leaderboard_measures=overall_spend,total_bids,impressions,clicks,ctr&grain=day",
+    "components": {
+      "base_url": "https://ui.rilldata.com",
+      "org": "demo",
+      "project": "rill-openrtb-prog-ads",
+      "page_type": "explore",
+      "page_name": "bids_explore",
+      "time_range": "2025-12-30 to 2026-01-03",
+      "timezone": null,
+      "measures": [
+        "overall_spend",
+        "total_bids",
+        "impressions",
+        "clicks",
+        "ctr"
+      ],
+      "dimensions": [
+        "advertiser_name",
+        "device_type",
+        "device_region"
+      ],
+      "sort_dir": "DESC",
+      "sort_by": "overall_spend",
+      "leaderboard_measures": [
+        "overall_spend",
+        "total_bids",
+        "impressions",
+        "clicks",
+        "ctr"
+      ],
+      "view": null,
+      "rows": null,
+      "cols": null,
+      "table_mode": null,
+      "grain": "day",
+      "compare_time_range": null
+    }
+  },
+  "metadata": {
+    "description": "Mobile campaigns in US, GB, CA regions",
+    "filter": "device_type = 'mobile' AND device_region IN ('US', 'GB', 'CA')",
+    "time_range": "2025-12-30 to 2026-01-03",
+    "warning": "Complex WHERE clause cannot be encoded in URL"
+  }
+}

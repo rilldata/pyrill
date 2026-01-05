@@ -1,0 +1,228 @@
+{
+  "test_name": "basic_metrics_query",
+  "org": "demo",
+  "project": "rill-openrtb-prog-ads",
+  "query": {
+    "metrics_view": "bids_metrics",
+    "dimensions": [
+      {
+        "name": "advertiser_name",
+        "compute": null
+      },
+      {
+        "name": "device_type",
+        "compute": null
+      }
+    ],
+    "measures": [
+      {
+        "name": "overall_spend",
+        "compute": null
+      },
+      {
+        "name": "total_bids",
+        "compute": null
+      },
+      {
+        "name": "impressions",
+        "compute": null
+      },
+      {
+        "name": "win_rate",
+        "compute": null
+      }
+    ],
+    "where": null,
+    "having": null,
+    "time_range": {
+      "start": "2025-12-30T00:00:00+00:00",
+      "end": "2026-01-02T00:00:00+00:00",
+      "iso_duration": null,
+      "iso_offset": null,
+      "expression": null,
+      "round_to_grain": null
+    },
+    "comparison_time_range": null,
+    "spine": null,
+    "sort": [
+      {
+        "name": "overall_spend",
+        "desc": true
+      }
+    ],
+    "limit": 20,
+    "offset": null,
+    "pivot_on": null,
+    "time_zone": null,
+    "use_display_names": null,
+    "rows": null
+  },
+  "result": {
+    "data": [
+      {
+        "advertiser_name": "Hyundai",
+        "device_type": "Mobile/Tablet",
+        "impressions": 14162,
+        "overall_spend": 84047.56,
+        "total_bids": 87876,
+        "win_rate": 0.1611589057308025
+      },
+      {
+        "advertiser_name": "Hyundai",
+        "device_type": "Personal Computer",
+        "impressions": 6904,
+        "overall_spend": 35127.462,
+        "total_bids": 34484,
+        "win_rate": 0.2002087924834706
+      },
+      {
+        "advertiser_name": "Instacart",
+        "device_type": "Mobile/Tablet",
+        "impressions": 2930,
+        "overall_spend": 23310.814,
+        "total_bids": 19452,
+        "win_rate": 0.1506271848653095
+      },
+      {
+        "advertiser_name": "drakesoftware",
+        "device_type": "Mobile/Tablet",
+        "impressions": 2706,
+        "overall_spend": 21165.088,
+        "total_bids": 7802,
+        "win_rate": 0.3468341450910023
+      },
+      {
+        "advertiser_name": "Amgen Inc",
+        "device_type": "Mobile/Tablet",
+        "impressions": 2031,
+        "overall_spend": 18973.647,
+        "total_bids": 9145,
+        "win_rate": 0.2220885729907053
+      },
+      {
+        "advertiser_name": "ESPACIO URBANO",
+        "device_type": "Mobile/Tablet",
+        "impressions": 1345,
+        "overall_spend": 17858.532,
+        "total_bids": 3643,
+        "win_rate": 0.3692012077957727
+      },
+      {
+        "advertiser_name": "GlaxoSmithKline",
+        "device_type": "Mobile/Tablet",
+        "impressions": 1924,
+        "overall_spend": 15260.579,
+        "total_bids": 9788,
+        "win_rate": 0.19656722517368205
+      },
+      {
+        "advertiser_name": "Johnson & Johnson",
+        "device_type": "Mobile/Tablet",
+        "impressions": 1068,
+        "overall_spend": 14935.161,
+        "total_bids": 27003,
+        "win_rate": 0.0395511609821131
+      },
+      {
+        "advertiser_name": "Clorox",
+        "device_type": "Mobile/Tablet",
+        "impressions": 3371,
+        "overall_spend": 11169.605,
+        "total_bids": 8609,
+        "win_rate": 0.3915669648042746
+      },
+      {
+        "advertiser_name": "JBS",
+        "device_type": "Mobile/Tablet",
+        "impressions": 774,
+        "overall_spend": 10829.563,
+        "total_bids": 2345,
+        "win_rate": 0.3300639658848614
+      },
+      {
+        "advertiser_name": "drakesoftware",
+        "device_type": "Set Top Box[NR1]",
+        "impressions": 764,
+        "overall_spend": 10482.033,
+        "total_bids": 5786,
+        "win_rate": 0.1320428620808849
+      },
+      {
+        "advertiser_name": "Chequing",
+        "device_type": "Mobile/Tablet",
+        "impressions": 15262,
+        "overall_spend": 10455.483,
+        "total_bids": 299513,
+        "win_rate": 0.050956051991065496
+      },
+      {
+        "advertiser_name": "Hennessy",
+        "device_type": "Tablet",
+        "impressions": 716,
+        "overall_spend": 10023.284,
+        "total_bids": 1463,
+        "win_rate": 0.4894053315105947
+      },
+      {
+        "advertiser_name": "ConvenientMD",
+        "device_type": "Mobile/Tablet",
+        "impressions": 1955,
+        "overall_spend": 8575.124,
+        "total_bids": 2959,
+        "win_rate": 0.6606961811422778
+      },
+      {
+        "advertiser_name": "trlegal",
+        "device_type": "Mobile/Tablet",
+        "impressions": 8390,
+        "overall_spend": 6838.246,
+        "total_bids": 12574,
+        "win_rate": 0.6672498807062192
+      },
+      {
+        "advertiser_name": "SushiShop",
+        "device_type": "Mobile/Tablet",
+        "impressions": 974,
+        "overall_spend": 6676.08,
+        "total_bids": 1665,
+        "win_rate": 0.584984984984985
+      },
+      {
+        "advertiser_name": "Dr. Pepper Keurig",
+        "device_type": "Set Top Box[NR1]",
+        "impressions": 670,
+        "overall_spend": 6460.11,
+        "total_bids": 1542,
+        "win_rate": 0.4345006485084306
+      },
+      {
+        "advertiser_name": "Unreal Deli",
+        "device_type": "Mobile/Tablet",
+        "impressions": 1445,
+        "overall_spend": 6343.356,
+        "total_bids": 2402,
+        "win_rate": 0.6015820149875104
+      },
+      {
+        "advertiser_name": "drakesoftware",
+        "device_type": "Personal Computer",
+        "impressions": 982,
+        "overall_spend": 5884.197,
+        "total_bids": 3396,
+        "win_rate": 0.28916372202591284
+      },
+      {
+        "advertiser_name": "Franprix",
+        "device_type": "Mobile/Tablet",
+        "impressions": 414,
+        "overall_spend": 5792.427,
+        "total_bids": 1272,
+        "win_rate": 0.32547169811320753
+      }
+    ]
+  },
+  "metadata": {
+    "description": "Basic metrics query with advertiser and device dimensions",
+    "time_range": "2025-12-30 to 2026-01-02"
+  }
+}

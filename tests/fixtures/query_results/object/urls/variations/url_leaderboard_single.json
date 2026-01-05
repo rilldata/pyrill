@@ -1,0 +1,103 @@
+{
+  "test_name": "url_leaderboard_single",
+  "org": "demo",
+  "project": "rill-openrtb-prog-ads",
+  "query": {
+    "metrics_view": "bids_metrics",
+    "dimensions": [
+      {
+        "name": "advertiser_name",
+        "compute": null
+      },
+      {
+        "name": "campaign_name",
+        "compute": null
+      }
+    ],
+    "measures": [
+      {
+        "name": "overall_spend",
+        "compute": null
+      },
+      {
+        "name": "total_bids",
+        "compute": null
+      },
+      {
+        "name": "impressions",
+        "compute": null
+      },
+      {
+        "name": "clicks",
+        "compute": null
+      },
+      {
+        "name": "ctr",
+        "compute": null
+      }
+    ],
+    "where": null,
+    "having": null,
+    "time_range": {
+      "start": null,
+      "end": null,
+      "iso_duration": "P7D",
+      "iso_offset": null,
+      "expression": null,
+      "round_to_grain": null
+    },
+    "comparison_time_range": null,
+    "spine": null,
+    "sort": [
+      {
+        "name": "overall_spend",
+        "desc": true
+      }
+    ],
+    "limit": null,
+    "offset": null,
+    "pivot_on": null,
+    "time_zone": null,
+    "use_display_names": null,
+    "rows": null
+  },
+  "url": {
+    "string": "https://ui.rilldata.com/demo/rill-openrtb-prog-ads/explore/bids_explore?tr=P7D&measures=overall_spend,total_bids,impressions,clicks,ctr&dims=advertiser_name,campaign_name&sort_dir=DESC&sort_by=overall_spend&leaderboard_measures=overall_spend&grain=day",
+    "components": {
+      "base_url": "https://ui.rilldata.com",
+      "org": "demo",
+      "project": "rill-openrtb-prog-ads",
+      "page_type": "explore",
+      "page_name": "bids_explore",
+      "time_range": "P7D",
+      "timezone": null,
+      "measures": [
+        "overall_spend",
+        "total_bids",
+        "impressions",
+        "clicks",
+        "ctr"
+      ],
+      "dimensions": [
+        "advertiser_name",
+        "campaign_name"
+      ],
+      "sort_dir": "DESC",
+      "sort_by": "overall_spend",
+      "leaderboard_measures": [
+        "overall_spend"
+      ],
+      "view": null,
+      "rows": null,
+      "cols": null,
+      "table_mode": null,
+      "grain": "day",
+      "compare_time_range": null
+    }
+  },
+  "metadata": {
+    "description": "Only first measure in leaderboard",
+    "leaderboard_config": "multi_leaderboard_measures=False",
+    "expected_leaderboard": "overall_spend"
+  }
+}
