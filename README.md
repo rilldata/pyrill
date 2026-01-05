@@ -4,6 +4,10 @@
 
 **34 end-to-end query tests** passed. [View Report](tests/fixtures/query_results/README.md)
 
+**34 end-to-end query tests** passed. [View Report](tests/fixtures/query_results/README.md)
+
+**34 end-to-end query tests** passed. [View Report](tests/fixtures/query_results/README.md)
+
 A lightweight Python SDK for interacting with the [Rill Data](https://rilldata.com) API.
 
 ## Features
